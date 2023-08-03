@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  text-align: center;
+  padding: 4rem;
+  background-color: white;
+  height: 100vw;
+  width: 100vw;
+  color: black;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+/*.button {
+  background-color: red;
+  height: 20px;
+  padding: 14px;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.task.reminder {
+  border: 2px solid green;
+}
+input {
+  width: 150px;
+  padding: 8px;
+  border: 1.4px grey solid;
+  margin-left: 9px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.myApp {
+  border: 2px solid blue;
+  padding: 30px;
+  border-radius: 2%;
+}
+
+@media (max-width: 900px) {
+  .myApp {
+    width: 500px;
+    padding: 15px;
+    margin: 0px;
+    padding: 30px;
+  }
+  .header {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .myApp {
+    width: 300px;
+    padding: 15px;
+    margin: 0px;
+    padding: 30px;
+  }
+}
